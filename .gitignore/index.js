@@ -9,7 +9,7 @@ module.exports.help = {
 
 Client.on("ready", () => {
 	console.log("online");
-	Client.user.setPresence({ game: { name: `Fortnite 2.0`, type: 0} });
+	Client.user.setPresence({ game: { name: `Fortnite`, type: 0} });
 });
 
 
@@ -40,6 +40,6 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
-Client.login(process.env.TOKEN);
-
 });
+
+Client.login(process.env.TOKEN);
