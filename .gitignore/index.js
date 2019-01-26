@@ -40,8 +40,6 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
-});
-
 Client.login(process.env.TOKEN);
 
 
@@ -106,6 +104,4 @@ if (!message.content.startsWith(prefix)) return;
          
          
       }
- 
-
 });
