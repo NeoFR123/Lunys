@@ -12,6 +12,10 @@ Client.on("ready", () => {
 	Client.user.setPresence({ game: { name: `Fortnite`, type: 0} });
 });
 
+bot.on('guildMemberAdd', member => {
+    bot.channels.get('539104444969779210').send(`__Bienvenue ${member} sur le discord de la **OpTium eSport**__`);
+});
+
 
 Client.on("message", async (message) => {
 	if (message.author.bot) return;
