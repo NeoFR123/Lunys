@@ -1,17 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var bot = new Discord.Client();
 var prefix = ("/");
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: 'Fortnite', type: 0} });
-    console.log("En marche !");
 
 });
 
 bot.on('guildMemberAdd', member => {
-	    bot.channels.get('539104444969779210').send(`__Bienvenue ${member} sur le discord de la **OpTium eSport**__`);
+	    bot.channels.get('539104444969779210').send(`__Bienvenue ${member} sur le discord de la **Lunys**__`);
 });
 
 
