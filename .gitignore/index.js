@@ -1,15 +1,13 @@
 const Discord = require('discord.js');
-const Client = new Discord.Client();
+const client = new Discord.Client();
 
-const prefix = "/"
+var bot = new Discord.Client();
+var prefix = ("/");
 
-module.exports.help = {
-  name: "clear"
-}
+bot.on('ready', () => {
+    bot.user.setPresence({ game: { name: 'Fortnite', type: 0} });
+    console.log("En marche !");
 
-Client.on("ready", () => {
-	console.log("online");
-	Client.user.setPresence({ game: { name: `Fortnite`, type: 0} });
 });
 
 
