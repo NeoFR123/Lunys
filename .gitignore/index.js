@@ -43,7 +43,3 @@ Client.on("message", async (message) => {
 });
 
 Client.login(process.env.TOKEN);
-
-bot.on('guildMemberAdd', member => {
-    bot.channels.get('539104444969779210').send(`__Bienvenue ${member} sur le discord de la **Lunys**__`);
-});
