@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const Client = new Discord.Client();
 
-var prefix = ("/");
+const prefix = "/"
 
-bot.on('ready', () => {
-    bot.user.setPresence({ game: { name: 'Fortnite', type: 0} });
+module.exports.help = {
+  name: "clear"
+}
 
-});
-
-bot.on('guildMemberAdd', member => {
-	    bot.channels.get('539104444969779210').send(`__Bienvenue ${member} sur le discord de la **Lunys**__`);
+Client.on("ready", () => {
+	console.log("online");
+	Client.user.setPresence({ game: { name: `Fortnite`, type: 0} });
 });
 
 
