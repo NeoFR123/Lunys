@@ -40,6 +40,81 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
+	if (message.content === prefix + ``){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('#C5370A')
+            .addField("")
+            .setFooter("Copyright 2018 © Lunys")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
+    
+	}
+	
+	if (!message.content.startsWith(prefix)) return;
+
+    var args = message.content.substring(prefix.length).split(" ");
+
+    switch (args[0].toLowerCase()) {
+        case "rzfzfzfienrien":
+
+        var userCreateDate = message.author.createdAt.toString().split(" ");
+        var msauthor = message.author.id;
+
+        var stats_embed = new Discord.RichEmbed()
+
+        .setColor("#EC1016")
+        .setTitle(`Statistiques de l'utilisateur : ${message.author.username}`)
+        .addField(`Maintenance ...`, "C'est une commande en cours de développement juste l'id est envoyé !")
+        .addField(`ID de l'utilisateur :id:`, msauthor, true)
+        .setThumbnail(message.author.avatarURL)
+        message.author.send({embed : stats_embed});
+        break;
+                     //CLEAR
+                     case "clear":
+                     if (message.member.hasPermission("ADMINISTRATOR")){
+                         message.channel.fetchMessages()
+                             .then(function(list){
+                                 message.channel.bulkDelete(list);
+                             }, function(err){message.channel.send("Erreur")})}
+                     break;
+        
+        
+     }
+
+     if (!message.content.startsWith(prefix)) return;
+
+     var args = message.content.substring(prefix.length).split(" ");
+ 
+     switch (args[0].toLowerCase()) {
+         case "efefefef":
+ 
+         var userCreateDate = message.author.createdAt.toString().split(" ");
+         var msauthor = message.author.id;
+ 
+         var stats_embed = new Discord.RichEmbed()
+ 
+         .setColor("#EC1016")
+         .setTitle(`Statistiques de l'utilisateur : ${message.author.username}`)
+         .addField(`En cours de préparation ...`, "C'est une commande en cours de développement juste l'id est envoyé !")
+         .addField(`ID de l'utilisateur :id:`, msauthor, true)
+         .setThumbnail(message.author.avatarURL)
+         message.author.send({embed : stats_embed});
+         break;
+                      //CLEAR
+                      case "setchatclear":
+                      if (message.member.hasPermission("SPEAK")){
+                          message.channel.fetchMessages()
+                              .then(function(list){
+                                  message.channel.bulkDelete(list);
+                              }, function(err){message.channel.send("Erreur")})}
+                      break;
+         
+         
+	 }
+
+	 
+
 });
 
 Client.login(process.env.TOKEN);
