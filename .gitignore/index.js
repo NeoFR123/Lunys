@@ -40,10 +40,10 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
-	if (message.content === prefix + ``){
+	if (message.content === prefix + `Lunys`){
         var help_embed = new Discord.RichEmbed()
-            .setColor('#C5370A')
-            .addField("")
+            .setColor('RANDOM')
+            .addField("Bienvenue, chez Lunys ! ;)")
             .setFooter("Copyright 2018 © Lunys")
         message.channel.sendEmbed(help_embed);
         //messagechannel
