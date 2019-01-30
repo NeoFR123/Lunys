@@ -43,7 +43,7 @@ Client.on("message", async (message) => {
 	if (message.content === prefix + `Lunys`){
         var help_embed = new Discord.RichEmbed()
             .setColor('RANDOM')
-            .addField("Bienvenue, chez Lunys ! ;)")
+            .addField("__**Bienvenue chez Lunys**__", "*http://lunys.fr (Bientôt)")
             .setFooter("Copyright 2018 © Lunys")
         message.channel.sendEmbed(help_embed);
         //messagechannel
