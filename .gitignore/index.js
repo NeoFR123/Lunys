@@ -34,8 +34,8 @@ Client.on("message", async (message) => {
 	if (command == "aide") {
 		const embed = new Discord.RichEmbed()
 		.setColor(0x954D23)
-		.setTitle("List des commandes:")
-		.addField("**__Soon__**", "http://lunys.fr/")
+		.setTitle("**__Soon__**")
+		.addField("Bientôt : ", "http://lunys.fr/")
 		message.channel.send({embed})
 	}
 
