@@ -35,8 +35,7 @@ Client.on("message", async (message) => {
 		const embed = new Discord.RichEmbed()
 		.setColor(0x954D23)
 		.setTitle("List des commandes:")
-		.addField("/OpTium", "Tu veux des réseaux sociaux ?")
-		.addField("/classement", "Tu veux le classement ?")
+		.addField("**__Soon__**", "http://lunys.fr/")
 		message.channel.send({embed})
 	}
 
