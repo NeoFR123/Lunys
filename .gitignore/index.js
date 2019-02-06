@@ -40,7 +40,6 @@ Client.on("message", async (message) => {
 	}
 
 	if (message.content === prefix + `lunysprotect`){
-	if (message.member.hasPermission("ADMINISTRATOR"))
         var help_embed = new Discord.RichEmbed()
             .setColor('RANDOM')
             .addField("**:white_check_mark: Tous les membres ont été protéger !**", " ")
