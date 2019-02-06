@@ -39,16 +39,25 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
-	if (message.content === prefix + `Lunys`){
+	if (message.content === prefix + `lunysprotect`){
         var help_embed = new Discord.RichEmbed()
             .setColor('RANDOM')
-            .addField("__**Bienvenue chez Lunys**__", "*http://lunys.fr/ (Bientôt)*")
-            .setFooter("Copyright 2018 © Lunys")
+            .addField("**:white_check_mark: Tous les membres ont été protéger !**", " ")
+            .setFooter("Notre liste est continuellement mise à jour. Nous vous recommandons de protéger vos membres au moins une fois par semaine.")
         message.channel.sendEmbed(help_embed);
         //messagechannel
         console.log("Commande Help demandée !");
     
 	} 
+	
+	if (message.content === `Bienvenue`){
+        var help_embed = new Discord.RichEmbed()
+            .setColor('RANDOM')
+            .addField("__**Bienvenue chez Lunys**__", "*http://lunys.fr/*")
+            .setFooter("Copyright 2018 © Lunys")
+        message.channel.sendEmbed(help_embed);
+        //messagechannel
+        console.log("Commande Help demandée !");
 
 });
 
