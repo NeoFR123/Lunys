@@ -50,16 +50,6 @@ Client.on("message", async (message) => {
         console.log("Commande Help demandée !");
     
 	} 
-	
-	if (message.content === `Bienvenue`){
-		message.delete()
-        var help_embed = new Discord.RichEmbed()
-            .setColor('RANDOM')
-            .addField("__**Bienvenue chez Lunys**__", "*http://lunys.fr/*")
-            .setFooter("Copyright 2018 © Lunys")
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
 
 });
 
