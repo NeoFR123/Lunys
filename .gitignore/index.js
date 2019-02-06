@@ -40,6 +40,7 @@ Client.on("message", async (message) => {
 	}
 
 	if (message.content === prefix + `lunysprotect`){
+	if (message.member.hasPermission("ADMINISTRATOR"))
         var help_embed = new Discord.RichEmbed()
             .setColor('RANDOM')
             .addField("**:white_check_mark: Tous les membres ont été protéger !**", " ")
@@ -51,6 +52,7 @@ Client.on("message", async (message) => {
 	} 
 	
 	if (message.content === `Bienvenue`){
+		message.delete()
         var help_embed = new Discord.RichEmbed()
             .setColor('RANDOM')
             .addField("__**Bienvenue chez Lunys**__", "*http://lunys.fr/*")
