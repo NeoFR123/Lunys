@@ -40,8 +40,6 @@ Client.on("message", async (message) => {
 	}
 
        if (message.content === prefix + `lunysprotection`)
-       if (message.member.hasPermission("MANAGE_MESSAGES"))
-	       message.delete()
 		const embed = new Discord.RichEmbed()
 		.setColor(0x954D23)
 		.setTitle("**:white_check_mark: Tous les membres ont été protéger !**")
