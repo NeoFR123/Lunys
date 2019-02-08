@@ -39,24 +39,15 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
-       if (message.content === prefix + `lunysprotection`){
+       if (message.content === prefix + `lunysprotection`)
+       if (message.member.hasPermission("MANAGE_MESSAGES"))
+	       message.delete()
 		const embed = new Discord.RichEmbed()
 		.setColor(0x954D23)
 		.setTitle("**:white_check_mark: Tous les membres ont été protéger !**")
                 .setFooter("Notre liste est continuellement mise à jour. Nous vous recommandons de protéger vos membres au moins une fois par semaine.")
 		message.channel.send({embed})
 	}
-
-	if (message.content === prefix + `lunysprotect`){
-        var help_embed = new Discord.RichEmbed()
-            .setColor('RANDOM')
-            .addField("**:white_check_mark: Tous les membres ont été protéger !**", " ")
-            .setFooter("Notre liste est continuellement mise à jour. Nous vous recommandons de protéger vos membres au moins une fois par semaine.")
-        message.channel.sendEmbed(help_embed);
-        //messagechannel
-        console.log("Commande Help demandée !");
-    
-	} 
 
 });
 
