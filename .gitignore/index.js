@@ -39,14 +39,6 @@ Client.on("message", async (message) => {
 		message.channel.send({embed})
 	}
 
-       if (message.content === prefix + `lunysprotection`)
-		const embed = new Discord.RichEmbed()
-		.setColor(0x954D23)
-		.setTitle("**:white_check_mark: Tous les membres ont été protéger !**")
-                .setFooter("Notre liste est continuellement mise à jour. Nous vous recommandons de protéger vos membres au moins une fois par semaine.")
-		message.channel.send({embed})
-	}
-
 });
 
 Client.login(process.env.TOKEN);
