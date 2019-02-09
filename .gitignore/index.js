@@ -105,10 +105,10 @@ Client.on("message", async (message) => {
      }
      
 
-     if (message.content === prefix + `MovingZone`){
+     if (message.content === prefix + `@everyone`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
-            .addField("__**MovingZone**__" , "Les **MovingZone** vont bientôt commencer, veuillez rejoindre le salon 🔉Vocal | UNRANKED !\n          ")
+            .addField("__**MovingZone**__" , "Les **MovingZone** vont bientôt commencer, veuillez rejoindre le salon Vocal | UNRANKED !\n          ")
             .setFooter("Copyright 2018 © Lunys")
             .setThumbnail(message.author.avatarURL)
         message.channel.sendEmbed(help_embed);
