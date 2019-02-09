@@ -105,7 +105,7 @@ Client.on("message", async (message) => {
      }
      
 
-     if (message.content === prefix + `@everyone`){
+     if (message.content === prefix + `MovingZone`){
         var help_embed = new Discord.RichEmbed()
             .setColor('#C5370A')
             .addField("__**MovingZone**__" , "Les **MovingZone** vont bientôt commencer, veuillez rejoindre le salon Vocal | UNRANKED !\n          ")
